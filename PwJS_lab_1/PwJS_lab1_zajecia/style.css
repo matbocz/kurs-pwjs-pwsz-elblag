@@ -21,6 +21,7 @@ nav {
 main {
     height: auto;
     background-color: #03685f;
+    overflow: hidden;
 }
 
 #col-left {
@@ -39,4 +40,5 @@ main {
 footer {
     height: 100px;
     background-color: #487975;
+    clear: both;
 }
