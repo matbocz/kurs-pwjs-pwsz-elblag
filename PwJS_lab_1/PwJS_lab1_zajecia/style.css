@@ -5,6 +5,13 @@ body {
     text-align: center;
 }
 
+#container {
+    position: relative;
+    margin: auto;
+    width: 1078px;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ffffff;
 }
 
 header, nav, main, footer {
