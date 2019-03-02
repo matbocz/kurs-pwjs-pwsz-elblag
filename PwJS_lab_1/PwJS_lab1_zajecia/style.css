@@ -1,6 +1,10 @@
 body {
     color: #ffffff;
     background-color: #000000;
+    margin: 0px;
+    text-align: center;
+}
+
 }
 
 header, nav, main, footer {
