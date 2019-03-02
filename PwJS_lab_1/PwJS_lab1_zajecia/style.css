@@ -7,3 +7,23 @@ header, nav, main, footer {
     display: block;
     width: 1078px;
 }
+
+header {
+    height: 100px;
+    background-color: #0fe9d7;
+}
+
+nav {
+    height: 100px;
+    background-color: #1e837a;
+}
+
+main {
+    height: auto;
+    background-color: #03685f
+}
+
+footer {
+    height: 100px;
+    background-color: #487975;
+}
