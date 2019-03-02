@@ -23,6 +23,17 @@ main {
     background-color: #03685f;
 }
 
+#col-left {
+    background-color: #1166c7;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#col-center {
+    background-color: #4d89ce;
+    width: auto;
+    height: auto;
 }
 
 footer {
