@@ -1,0 +1,29 @@
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.row.content {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.sidenav {
+    height: 100%;
+}
+
+footer {
+    background-color: #2e5564;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.jumbotron {
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+    }
+}
