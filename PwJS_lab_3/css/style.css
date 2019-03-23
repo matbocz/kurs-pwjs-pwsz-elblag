@@ -3,11 +3,13 @@
     border-radius: 0;
 }
 
-.row.content {height: 630px}
+.row.content {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 
 .sidenav {
     height: 100%;
-    padding-top: 20px;
 }
 
 footer {
@@ -16,10 +18,12 @@ footer {
     padding: 20px;
 }
 
+.jumbotron {
+    margin: 0;
+}
+
 @media screen and (max-width: 767px) {
     .sidenav {
-      height: auto;
-      padding: 20px;
+        height: auto;
     }
-    .row.content {height:auto;} 
 }
