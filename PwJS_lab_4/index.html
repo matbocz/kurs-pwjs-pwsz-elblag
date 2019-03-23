@@ -198,7 +198,7 @@
                     <div class="form-group" id="info">
                         <p id="errorInfo" class="hide">Musisz podać informacje dodatkowe!</p>
                         <label class="control-label" for="contactInfo">Infomacje dodatkowe:</label>
-                        <textarea class="form-control" rows="4" id="contactInfo" placeholder="Wpisz informacje dodatkowe"></textarea>
+                        <textarea class="form-control" rows="4" id="contactInfo" placeholder="Wpisz informacje dodatkowe" onblur="infoEvent()" onchange="infoEvent()"></textarea>
                     </div>
                     <input type="submit" class="btn btn-default" value="Wyślij!">
                 </form>

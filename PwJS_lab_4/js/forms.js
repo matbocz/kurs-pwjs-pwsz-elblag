@@ -97,3 +97,15 @@ function emailEvent() {
         }
     }
 }
+
+function infoEvent() {
+    var contactInfo = document.getElementById("contactInfo");
+
+    if (contactInfo.value == "") {
+        document.getElementById("info").className = "form-group has-error";
+        document.getElementById("errorInfo").className = "alert alert-danger";
+        error = true;
+    } else {
+        document.getElementById("info").className = "form-group has-success";
+    }
+}
