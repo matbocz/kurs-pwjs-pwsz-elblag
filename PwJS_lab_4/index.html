@@ -26,7 +26,7 @@
                     <ul class="nav navbar-nav text-right">
                         <li class="active"><a href="#main-page">Strona główna</a></li>
                         <li><a href="#galeria">Galeria</a></li>
-                        <li><a href="#">Projekty</a></li>
+                        <li><a href="#formularz">Formularz</a></li>
                         <li><a href="#">Kontakt</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right text-right">
@@ -169,9 +169,11 @@
             </div>
         </div>
 
-        <section class="bg-danger">
-            <div id="galeria" class="container">
-                <h1 class="text-danger">Formularz</h1>
+        <section class="bg-info">
+            <div id="formularz" class="container">
+                <h1 class="text-info">Formularz</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tortor diam.
+                Praesent aliquam suscipit urna, vitae vehicula justo dapibus quis. Ut aliquam leo nisl, id luctus risus aliquet non.</p>
             </div>
         </section>
 
@@ -179,18 +181,22 @@
             <div class="row content">
                 <form action="index.html#kontakt" method="post" onsubmit="return checkForm();">
                     <div class="form-group">
+                        <p id="errorName" class="hide">Musisz podać imię!</p>
                         <label for="contactName">Imię: </label>
                         <input type="text" class="form-control" id="contactName" placeholder="Wpisz imię">
                     </div>
                     <div class="form-group">
+                        <p id="errorSurname" class="hide">Musisz podać nazwisko!</p>
                         <label for="contactSurname">Nazwisko: </label>
                         <input type="text" class="form-control" id="contactSurname" placeholder="Wpisz nazwisko">
                     </div>
                     <div class="form-group">
+                        <p id="errorEmail" class="hide">Musisz podać swój adres e-mail!</p>
                         <label for="contactEmail">E-mail: </label>
                         <input type="text" class="form-control" id="contactEmail" placeholder="Wpisz e-mail">
                     </div>
                     <div class="form-group">
+                        <p id="errorInfo" class="hide">Musisz podać informacje dodatkowe!</p>
                         <label for="contactInfo">Infomację: </label>
                         <textarea class="form-control" rows="4" id="contactInfo" placeholder="Wpisz informację"></textarea>
                     </div>
