@@ -64,3 +64,15 @@ function nameEvent() {
         document.getElementById("name").className = "form-group has-success";
     }
 }
+
+function surnameEvent() {
+    var contactSurname = document.getElementById("contactSurname");
+
+    if (contactSurname.value == "") {
+        document.getElementById("surname").className = "form-group has-error";
+        document.getElementById("errorSurname").className = "alert alert-danger";
+        error = true;
+    } else {
+        document.getElementById("surname").className = "form-group has-success";
+    }
+}
