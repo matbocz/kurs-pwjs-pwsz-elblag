@@ -53,4 +53,14 @@ function checkForm() {
         return false;
     }
 }
+
+function nameEvent() {
+    var contactName = document.getElementById("contactName");
+
+    if (contactName.value == "") {
+        document.getElementById("name").className = "form-group has-error";
+        document.getElementById("errorName").className = "alert alert-danger";
+    } else {
+        document.getElementById("name").className = "form-group has-success";
+    }
 }
