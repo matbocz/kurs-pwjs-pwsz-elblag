@@ -180,24 +180,24 @@
         <div class="container">
             <div class="row content">
                 <form action="index.html#kontakt" method="post" onsubmit="return checkForm();">
-                    <div class="form-group">
+                    <div class="form-group" id="name">
                         <p id="errorName" class="hide">Musisz podać imię!</p>
-                        <label for="contactName">Imię: </label>
+                        <label class="control-label" for="contactName">Imię:</label>
                         <input type="text" class="form-control" id="contactName" placeholder="Wpisz imię">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="surname">
                         <p id="errorSurname" class="hide">Musisz podać nazwisko!</p>
-                        <label for="contactSurname">Nazwisko: </label>
+                        <label class="control-label" for="contactSurname">Nazwisko: </label>
                         <input type="text" class="form-control" id="contactSurname" placeholder="Wpisz nazwisko">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="email">
                         <p id="errorEmail" class="hide">Musisz podać swój adres e-mail!</p>
-                        <label for="contactEmail">E-mail: </label>
+                        <label class="control-label" for="contactEmail">E-mail:</label>
                         <input type="text" class="form-control" id="contactEmail" placeholder="Wpisz e-mail">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="info">
                         <p id="errorInfo" class="hide">Musisz podać informacje dodatkowe!</p>
-                        <label for="contactInfo">Infomację: </label>
+                        <label class="control-label" for="contactInfo">Infomację:</label>
                         <textarea class="form-control" rows="4" id="contactInfo" placeholder="Wpisz informację"></textarea>
                     </div>
                     <input type="submit" class="btn btn-default" value="Wyślij!">
