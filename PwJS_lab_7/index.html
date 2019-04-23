@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pl" ng-app="portfolioApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/controllers.js"></script>
+        <script type="text/javascript" src="js/forms.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700|IBM+Plex+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+        <title>18560 Mateusz Boczarski</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#main-page"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav text-right">
+                        <li><a href="#main-page" class="btn btn-primary"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Strona główna</a></li>
+                        <li><a href="#galeria" class="btn btn-primary"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Galeria</a></li>
+                        <li><a href="#formularz" class="btn btn-primary"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Formularz</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right text-right">
+                        <li><a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span> Zaloguj się!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div class="container">
+                <div id="carouselID" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselID" data-slide-to="0"></li>
+                        <li data-target="#carouselID" data-slide-to="1"></li>
+                        <li data-target="#carouselID" data-slide-to="2"></li>
+                        <li data-target="#carouselID" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/photo0.jpg" alt="">
+                            <div class="carousel-caption">Obrazek 0</div>
+                        </div>
+                        <div class="item">
+                            <img src="img/photo1.jpg" alt="">
+                            <div class="carousel-caption">Obrazek 1</div>
+                        </div>
+                        <div class="item">
+                            <img src="img/photo2.jpg" alt="">
+                            <div class="carousel-caption">Obrazek 2</div>
+                        </div>
+                        <div class="item">
+                            <img src="img/photo3.jpg" alt="">
+                            <div class="carousel-caption">Obrazek 3</div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carouselID" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Poprzedni</span>
+                    </a>
+                    <a class="right carousel-control" href="#carouselID" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Następny</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section class="jumbotron">
+            <div id="main-page" class="container">
+                <h1><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Strona główna</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tortor diam.
+                Praesent aliquam suscipit urna, vitae vehicula justo dapibus quis. Ut aliquam leo nisl, id luctus risus aliquet non.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row content">
+                <div class="col-sm-2 sidenav text-center">
+                    <hr>
+                    <h3>Menu</h3>
+                    <hr>
+                    <a href="#">O nas</a> <br>
+                    <a href="#">Ogłoszenia</a> <br>
+                    <a href="#">Pomoc</a> <br>
+                    <a href="#">Zgłoś błąd</a>
+                </div>
+                <div class="col-sm-10 text-justify">
+                    <h1>Nagłówek 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tortor diam.
+                    Praesent aliquam suscipit urna, vitae vehicula justo dapibus quis. Ut aliquam leo nisl, id luctus risus aliquet non.
+                    Morbi vel bibendum ligula. Pellentesque ut molestie mi. Vivamus sodales feugiat mi ut sagittis. Etiam vitae ultricies ex.
+                    Nam varius dolor ut turpis eleifend pretium. Fusce tellus lacus, pellentesque vitae mauris eu, pulvinar scelerisque velit.
+                    Donec at est odio. Proin rhoncus purus non pulvinar blandit. In hac habitasse platea dictumst.</p>
+                    <h3>Tabela</h3>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th rowspan="2">L.p.</th>
+                            <th colspan="2">Osoba</th>
+                            <th rowspan="2">Info</th>
+                        </tr>
+                        <tr>
+                            <th>Imię</th>
+                            <th>Nazwisko</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Jan</td>
+                            <td>Kowalski</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Anna</td>
+                            <td>Nowak</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Maria</td>
+                            <td>Kowalska</td>
+                            <td>Absolwent</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Michał</td>
+                            <td>Nowak</td>
+                            <td>Student</td>
+                        </tr>
+                    </table>
+                    <h3>Nagłówek 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tortor diam.
+                    Praesent aliquam suscipit urna, vitae vehicula justo dapibus quis. Ut aliquam leo nisl, id luctus risus aliquet non.</p>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div id="galeria" class="container">
+                <h1><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Galeria</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tortor diam.
+                Praesent aliquam suscipit urna, vitae vehicula justo dapibus quis. Ut aliquam leo nisl, id luctus risus aliquet non.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row content">
+                <div class="col-sm-4 text-center">
+                    <img src="img/photo4.jpg" class="img-responsive img-circle center-block" alt="">
+                    <h3>Obrazek 4</h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img src="img/photo5.jpg" class="img-responsive img-circle center-block" alt="">
+                    <h3>Obrazek 5</h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img src="img/photo6.jpg" class="img-responsive img-circle center-block" alt="">
+                    <h3>Obrazek 6</h3>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div id="formularz" class="container">
+                <h1><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Formularz</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tortor diam.
+                Praesent aliquam suscipit urna, vitae vehicula justo dapibus quis. Ut aliquam leo nisl, id luctus risus aliquet non.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row content">
+                <div class="col-sm-4 text-center">
+                    <img src="img/kontakt.jpg" class="img-responsive img-circle center-block" alt="">
+                    <h3>Skontaktuj się z nami!</h3>
+                </div>
+                <div class="col-sm-8">
+                    <form action="index.html#kontakt" method="post" onsubmit="return checkForm();">
+                        <div class="form-group" id="name">
+                            <p id="errorName" class="hide">Musisz podać imię!</p>
+                            <label class="control-label" for="contactName">Imię:</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Wpisz imię" onblur="nameEvent()" onchange="nameEvent()">
+                        </div>
+                        <div class="form-group" id="surname">
+                            <p id="errorSurname" class="hide">Musisz podać nazwisko!</p>
+                            <label class="control-label" for="contactSurname">Nazwisko: </label>
+                            <input type="text" class="form-control" id="contactSurname" placeholder="Wpisz nazwisko" onblur="surnameEvent()" onchange="surnameEvent()">
+                        </div>
+                        <div class="form-group" id="email">
+                            <p id="errorEmail" class="hide">Musisz podać adres e-mail!</p>
+                            <label class="control-label" for="contactEmail">E-mail:</label>
+                            <input type="text" class="form-control" id="contactEmail" placeholder="Wpisz e-mail" onblur="emailEvent()" onchange="emailEvent()">
+                        </div>
+                        <div class="form-group" id="info">
+                            <p id="errorInfo" class="hide">Musisz podać informacje dodatkowe!</p>
+                            <label class="control-label" for="contactInfo">Infomacje dodatkowe:</label>
+                            <textarea class="form-control" rows="4" id="contactInfo" placeholder="Wpisz informacje dodatkowe" onblur="infoEvent()" onchange="infoEvent()"></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Wyślij!">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div id="podroze" class="container">
+                <h1><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Podróże</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tortor diam.
+                Praesent aliquam suscipit urna, vitae vehicula justo dapibus quis. Ut aliquam leo nisl, id luctus risus aliquet non.</p>
+            </div>
+        </section>
+
+        <div class="container" ng-controller="GalleryListCtrl">
+            <div class="row content text-center">
+                <p><input type="text" class="form-control" placeholder="Wyszukaj" ng-model="query"><p>
+                <p ng-if="query"><b>Wyniki wyszukiwania dla:</b> {{query}}</p>
+                <span ng-if="query == null">
+                    <p><b>Ilość elementów:</b> {{galleries.length}}</p>
+                </span>
+                <hr>
+                <label>Sortuj: </label>
+                <select ng-model="orderProp" ng-options="sort as sort.label for sort in sortList" class="form-control">
+                    <option value="title">Alfabetycznie</option>
+                    <option value="when">Chronologicznie</option>
+                    <option value="-when">Od najnowszych</option>
+                </select>
+                <p ng-if="orderProp"><b>Galerie ułożone:</b> {{orderProp.label}}</p>
+                <hr>
+                <div class="col-sm-4 text-center" ng-repeat="g in galleries | filter: query | orderBy: orderProp.value">
+                    <img src="{{g.thumbnailUrl}}" class="img-responsive center-block" alt="">
+                    <h3>{{g.title}}</h3>
+                    <p><b>Kiedy:</b> {{g.when | date:'longDate'}}</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container text-center">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Polityka prywatności
+            </button>
+        </footer>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times</span>
+                            <h4 class="modal-title" id="myModalLabel">Zamknij okno</h4>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Polityka prywatności</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tortor diam.
+                        Praesent aliquam suscipit urna, vitae vehicula justo dapibus quis. Ut aliquam leo nisl, id luctus risus aliquet non.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij okno</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

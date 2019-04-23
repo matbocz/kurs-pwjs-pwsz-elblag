@@ -1,0 +1,71 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    color: #363636;
+    background: #e0e0e0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #764ABC;
+}
+
+hr {
+    border-color: #764ABC;
+}
+
+.table-bordered td, .table-bordered th {
+    border: #764ABC 1px solid !important;
+}
+
+.btn-primary {
+    color: #764ABC !important;
+    background-color: transparent;
+    border: #764ABC 1px solid;
+    border-radius: 0px;
+    margin: 2px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: transparent;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-brand img {
+    height: 30px;
+    width: 30px;
+}
+
+.row.content {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.sidenav {
+    height: 100%;
+}
+
+.jumbotron .glyphicon, .navbar .glyphicon, section .glyphicon {
+    color: #764ABC;
+}
+
+.jumbotron, .jumbotron p, .jumbotron h1, section, section p, section h1 {
+    background: #a5a5a5;
+    color: #e0e0e0;
+}
+
+footer {
+    background: #a5a5a5;
+    color: #e0e0e0;
+    padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+    }
+}
