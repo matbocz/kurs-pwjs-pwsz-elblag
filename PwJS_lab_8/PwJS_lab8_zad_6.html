@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
+
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(function() {
+                    $("#tabs").tabs();
+                });
+
+                $(function() {
+                    $("#datepicker").datepicker();
+                });
+
+                $("#dialog").dialog({appendTo: "#tabs-3"});
+            });
+        </script>
+    </head>
+    <body>
+        <div id="tabs"> 
+            <ul>
+                <li><a href="#tabs-1">Zakładka 1</a></li>
+                <li><a href="#tabs-2">Zakładka 2</a></li>
+                <li><a href="#tabs-3">Zakładka 3</a></li>
+            </ul>
+            
+            <div id="tabs-1">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nam rhoncus vestibulum magna sed sodales. Aenean quis orci a nulla pretium maximus vel id mi.
+                    Nunc ac ligula non velit imperdiet aliquam. Vivamus vel nibh iaculis, scelerisque est vitae, accumsan justo.
+                    Proin maximus, tellus accumsan dictum faucibus, ante eros pulvinar sem, sed iaculis erat diam vel urna.
+                    Fusce enim orci, sagittis quis metus a, fringilla consequat urna.
+                    Aliquam laoreet leo non mi varius, eu rutrum justo scelerisque.
+                    Aliquam metus sem, sagittis eget lorem sit amet, maximus rhoncus turpis. Aliquam ut magna a purus venenatis rhoncus.
+                    Morbi et ipsum dictum, lacinia diam vel, volutpat magna. Ut eu orci vel purus sagittis lacinia.
+                    Pellentesque justo diam, volutpat eu augue id, bibendum suscipit magna.
+                    Nullam risus magna, viverra non laoreet semper, facilisis vel eros.
+                </p>
+            </div>
+
+            <div id="tabs-2">
+                <p>
+                    Data: <input type="text" id="datepicker">
+                </p>
+            </div>
+
+            <div id="tabs-3">
+                <div id="dialog" title="Lorem ipsum">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nam rhoncus vestibulum magna sed sodales. Aenean quis orci a nulla pretium maximus vel id mi.
+                        Nunc ac ligula non velit imperdiet aliquam. Vivamus vel nibh iaculis, scelerisque est vitae, accumsan justo.
+                    </p>
+                </div>
+            </div> 
+        </div> 
+    </body>
+</html>
